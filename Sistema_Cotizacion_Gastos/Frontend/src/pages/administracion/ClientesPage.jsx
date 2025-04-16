@@ -2,6 +2,23 @@ import React, { useState, useEffect } from "react";
 import Sidebar from "../../components/general/Sidebar";
 import ListaClientes from "../../components/ClientesCRUD";
 
+/**
+ * @description Página de administración de clientes
+ * @returns {JSX.Element} Componente de la página de administración de clientes
+ * @component ClientesPage
+ * @description Este componente representa la página de administración de clientes.
+ * @description Muestra una lista de clientes y permite crear nuevos clientes.
+ * @param {Array} clientes - Lista de clientes obtenidos desde la API.
+ * @param {Function} setClientes - Función para actualizar la lista de clientes.
+ * @param {boolean} mostrarFormulario - Estado que indica si se debe mostrar el formulario para crear un nuevo cliente.
+ * @param {Function} setMostrarFormulario - Función para actualizar el estado de mostrarFormulario.
+ * @param {Array} ClientesSidebarItems - Array de objetos que representan los items del sidebar.
+ * @param {Function} obtenerClientes - Función para obtener la lista de clientes desde la API.
+ * @param {Function} manejarGuardar - Función para manejar la creación de un nuevo cliente.
+ * @param {Function} useEffect - Hook para manejar efectos secundarios en el componente.
+ * @param {Function} useState - Hook para manejar el estado en el componente.
+ */
+
 function ClientesPage() {
   const [clientes, setClientes] = useState([]);
   const [mostrarFormulario, setMostrarFormulario] = useState(false);

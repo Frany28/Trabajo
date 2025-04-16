@@ -7,7 +7,7 @@ const ListaClientes = () => {
   const [clientes, setClientes] = useState([]);
   const [clientesFiltrados, setClientesFiltrados] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [busqueda, setBusqueda] = useState(""); // Estado para el término de búsqueda
+  const [busqueda, setBusqueda] = useState(""); 
   const [page, setPage] = useState(1);
   const [editandoCliente, setEditandoCliente] = useState(null);
   const [clienteEditado, setClienteEditado] = useState({
