@@ -1,24 +1,32 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Variables de entorno
+.env
+.env.*          # variantes como .env.development, .env.production
 
-node_modules
-dist
-dist-ssr
-*.local
+# Salida de compilación
+/build/
+/dist/
+/out/           # si usas Next.js u otros frameworks
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Cobertura de tests
+/coverage/
+
+# Archivos de sistema
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+desktop.ini
+
+# Paquetes lock de pnpm
+pnpm-lock.yaml
+
+# Cachés de npm y yarn
+.npm
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/patches
+!.yarn/plugins
+!.yarn/versions
+
+# Archivos temporales de prueba
+*.tmp
+*.temp
